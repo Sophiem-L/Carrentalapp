@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="txtCarName" type="id">carName</item>
+    <item name="txtPrice" type="id">price</item>
+</resources>

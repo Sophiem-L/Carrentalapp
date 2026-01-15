@@ -1,8 +1,19 @@
 package com.example.carrentalapp.model;
 
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.carrentalapp.R; // Ensure this matches your package name
+import java.util.List;
+
 public class VehicleAdapter extends RecyclerView.Adapter<VehicleAdapter.ViewHolder> {
 
-    List<Vehicle> vehicleList;
+    private List<Vehicle> vehicleList;
 
     public VehicleAdapter(List<Vehicle> vehicleList) {
         this.vehicleList = vehicleList;
@@ -25,7 +36,7 @@ public class VehicleAdapter extends RecyclerView.Adapter<VehicleAdapter.ViewHold
 
     @Override
     public int getItemCount() {
-        return vehicleList.size();
+        return vehicleList != null ? vehicleList.size() : 0;
     }
 
     static class ViewHolder extends RecyclerView.ViewHolder {
@@ -38,4 +49,3 @@ public class VehicleAdapter extends RecyclerView.Adapter<VehicleAdapter.ViewHold
         }
     }
 }
-

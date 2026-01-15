@@ -39,6 +39,10 @@ android {
     buildFeatures {
         compose = true
     }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.5.1"  // <--- This is your version
+    }
 }
 
 dependencies {
@@ -57,6 +61,11 @@ dependencies {
 
     // Material (BottomNavigationView)
     implementation("com.google.android.material:material:1.11.0")
+
+    implementation("androidx.compose.ui:ui:1.6.0")
+    implementation("androidx.compose.material3:material3:1.2.0")
+
+    implementation("androidx.recyclerview:recyclerview:1.3.2")
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
