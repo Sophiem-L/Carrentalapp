@@ -1,0 +1,26 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Payment"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+
+    <RadioGroup
+        android:layout_marginTop="12dp">
+        <RadioButton android:text="Credit Card"/>
+        <RadioButton android:text="ABA Pay"/>
+        <RadioButton android:text="Cash"/>
+    </RadioGroup>
+
+    <Button
+        android:text="Pay Now"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
