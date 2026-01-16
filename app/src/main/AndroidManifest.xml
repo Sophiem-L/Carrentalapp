@@ -44,6 +44,7 @@
         <activity android:name=".ui.theme.auth.PhoneVerificationActivity" />
         <activity android:name=".ui.theme.auth.OtpVerificationActivity" />
         <activity android:name=".ui.theme.profile.ProfileActivity" />
+        <activity android:name=".ui.theme.home.SearchActivity" />
         <activity android:name=".ui.theme.home.HomeActivity" />
 
     </application>

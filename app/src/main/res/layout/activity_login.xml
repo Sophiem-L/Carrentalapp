@@ -20,8 +20,7 @@
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/ic_qent_logo"
-                app:tint="@color/black" />
+                android:src="@drawable/ic_qent_logo_main" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -154,7 +153,7 @@
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:background="@drawable/bg_button_white"
-            android:drawableStart="@android:drawable/ic_menu_info_details"
+            android:drawableStart="@drawable/ic_apple_pay"
             android:paddingStart="24dp"
             android:text="Apple pay"
             android:textAllCaps="false"
@@ -167,7 +166,7 @@
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:background="@drawable/bg_button_white"
-            android:drawableStart="@android:drawable/ic_menu_info_details"
+            android:drawableStart="@drawable/ic_google_pay"
             android:paddingStart="24dp"
             android:text="Google Pay"
             android:textAllCaps="false"
