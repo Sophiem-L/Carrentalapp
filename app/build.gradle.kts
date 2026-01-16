@@ -1,19 +1,16 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
-    alias(libs.plugins.kotlin.compose)
 }
 
 android {
     namespace = "com.example.carrentalapp"
-    compileSdk {
-        version = release(36)
-    }
-
+    compileSdk = 34
+    
     defaultConfig {
         applicationId = "com.example.carrentalapp"
         minSdk = 24
-        targetSdk = 36
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -41,7 +38,7 @@ android {
     }
 
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.1"  // <--- This is your version
+        kotlinCompilerExtensionVersion = "1.5.3"
     }
 }
 

@@ -23,6 +23,28 @@
         </activity>
 
         <activity android:name=".MainActivity" />
+        <activity android:name=".ui.theme.Vehiclcatalog.VehicleListActivity" />
+        <activity android:name=".ui.theme.Vehiclcatalog.VehicleDetailActivity" />
+        <activity android:name=".ui.theme.locationdate.LocationDatePickerActivity" />
+        <activity android:name=".ui.theme.booking.BookingActivity" />
+        <activity android:name=".ui.theme.booking.BookingConfirmationActivity" />
+        <activity android:name=".ui.theme.booking.BookingDetailsActivity" />
+        <activity android:name=".ui.theme.booking.ReservationActivity" />
+        <activity android:name=".ui.theme.payment.PaymentActivity" />
+        <activity android:name=".ui.theme.contract.DigitalContractActivity" />
+        <activity android:name=".ui.theme.insurance.insuranceSelectionActivity" />
+        <activity android:name=".ui.theme.support.SupportChatActivity" />
+        <activity android:name=".ui.theme.review.ReviewRatingActivity" />
+        <activity android:name=".ui.theme.logs.ActivityLogsActivity" />
+        <activity android:name=".ui.theme.admin.FleetManagementActivity" />
+        <activity android:name=".ui.theme.admin.RolePermissionActivity" />
+        <activity android:name=".ui.theme.auth.RegisterActivity" />
+        <activity android:name=".ui.theme.auth.LoginActivity" />
+        <activity android:name=".ui.theme.auth.ForgotPasswordActivity" />
+        <activity android:name=".ui.theme.auth.PhoneVerificationActivity" />
+        <activity android:name=".ui.theme.auth.OtpVerificationActivity" />
+        <activity android:name=".ui.theme.profile.ProfileActivity" />
+        <activity android:name=".ui.theme.home.HomeActivity" />
 
     </application>
 

@@ -5,6 +5,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.content.Intent;
+import com.example.carrentalapp.ui.theme.auth.LoginActivity;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class OnboardingScreen extends AppCompatActivity {
@@ -33,7 +35,8 @@ public class OnboardingScreen extends AppCompatActivity {
                     currentPage = 2;
                 } else {
                     // This is where you would move to the Login screen
-                    // startActivity(new Intent(OnboardingScreen.this, LoginActivity.class));
+                    startActivity(new Intent(OnboardingScreen.this, LoginActivity.class));
+                    finish();
                 }
             }
         });

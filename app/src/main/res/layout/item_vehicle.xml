@@ -18,6 +18,7 @@
             android:src="@drawable/car_sample"/>
 
         <TextView
+            android:id="@+id/txtCarName"
             android:text="Toyota Camry"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -26,6 +27,7 @@
             android:layout_height="wrap_content"/>
 
         <TextView
+            android:id="@+id/txtPrice"
             android:text="$45 / day"
             android:textColor="#4CAF50"
             android:layout_width="wrap_content"

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="48dp">
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_qent_logo"
+            app:tint="@color/black" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Qent"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter verification code"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="We have send a Code to : +100******00"
+        android:textSize="14sp"
+        android:textColor="@color/hint_gray"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="32dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="32dp">
+        <TextView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/bg_edittext"
+            android:gravity="center"
+            android:text="6"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="8dp" />
+        <TextView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/bg_edittext"
+            android:gravity="center"
+            android:text="9"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="8dp" />
+        <TextView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/bg_edittext"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="8dp" />
+        <TextView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/bg_edittext"
+            android:gravity="center"
+            android:text="1"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="8dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_continue_otp"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/bg_button_dark"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:backgroundTint="@null"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Didn't receive the OTP? Resend."
+        android:textColor="@color/hint_gray"
+        android:layout_marginBottom="32dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="4"
+        android:layout_marginBottom="16dp">
+
+        <!-- Numeric Keypad Implementation -->
+        <TextView style="@style/KeypadButton" android:text="1" />
+        <TextView style="@style/KeypadButton" android:text="2" />
+        <TextView style="@style/KeypadButton" android:text="3" />
+        <TextView style="@style/KeypadButton" android:text="4" />
+        <TextView style="@style/KeypadButton" android:text="5" />
+        <TextView style="@style/KeypadButton" android:text="6" />
+        <TextView style="@style/KeypadButton" android:text="7" />
+        <TextView style="@style/KeypadButton" android:text="8" />
+        <TextView style="@style/KeypadButton" android:text="9" />
+        <View android:layout_width="0dp" android:layout_height="48dp" android:layout_columnWeight="1" />
+        <TextView style="@style/KeypadButton" android:text="0" />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_columnWeight="1"
+            android:src="@android:drawable/ic_input_delete"
+            app:tint="@color/black"
+            android:padding="12dp" />
+    </GridLayout>
+
+</LinearLayout>
