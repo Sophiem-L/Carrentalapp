@@ -59,7 +59,7 @@
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:layout_gravity="center"
-                    android:src="@android:drawable/ic_popup_reminder"
+                    android:src="@drawable/ic_bell_line"
                     app:tint="@color/black" />
                 
                 <TextView
@@ -83,12 +83,14 @@
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="12dp"
                 android:background="@drawable/bg_card"
-                android:drawableStart="@android:drawable/ic_menu_search"
+                android:drawableStart="@drawable/ic_search_line"
                 android:drawablePadding="12dp"
                 android:hint="Search your dream car....."
                 android:paddingHorizontal="16dp"
-                android:textColorHint="@color/hint_gray"
+                android:textColor="@color/secondary_gray"
+                android:textColorHint="@color/secondary_gray"
                 android:textSize="14sp"
+                android:textStyle="bold"
                 app:layout_constraintEnd_toStartOf="@+id/btn_filter"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/iv_profile" />
@@ -98,7 +100,8 @@
                 android:layout_width="56dp"
                 android:layout_height="56dp"
                 android:background="@drawable/bg_card"
-                android:src="@android:drawable/ic_menu_preferences"
+                android:padding="16dp"
+                android:src="@drawable/ic_filter_line"
                 app:layout_constraintBottom_toBottomOf="@+id/et_home_search"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/et_home_search"
@@ -144,7 +147,7 @@
                         android:layout_marginTop="8dp"
                         android:text="Tesla"
                         android:textSize="12sp"
-                        android:textColor="@color/hint_gray" />
+                        android:textColor="@color/secondary_gray" />
                 </LinearLayout>
 
                 <!-- Brand 2 -->
@@ -166,7 +169,7 @@
                         android:layout_marginTop="8dp"
                         android:text="Lamborghini"
                         android:textSize="12sp"
-                        android:textColor="@color/hint_gray" />
+                        android:textColor="@color/secondary_gray" />
                 </LinearLayout>
 
                 <!-- Brand 3 -->
@@ -188,7 +191,7 @@
                         android:layout_marginTop="8dp"
                         android:text="BMW"
                         android:textSize="12sp"
-                        android:textColor="@color/hint_gray" />
+                        android:textColor="@color/secondary_gray" />
                 </LinearLayout>
 
                 <!-- Brand 4 -->
@@ -210,7 +213,7 @@
                         android:layout_marginTop="8dp"
                         android:text="Ferrari"
                         android:textSize="12sp"
-                        android:textColor="@color/hint_gray" />
+                        android:textColor="@color/secondary_gray" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -232,7 +235,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="View All"
-                android:textColor="@color/hint_gray"
+                android:textColor="@color/secondary_gray"
+                android:textStyle="bold"
                 android:textSize="14sp"
                 app:layout_constraintBottom_toBottomOf="@+id/tv_best_cars_title"
                 app:layout_constraintEnd_toEndOf="parent" />
@@ -243,7 +247,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:text="Available"
-                android:textColor="@color/hint_gray"
+                android:textColor="@color/secondary_gray"
+                android:textStyle="bold"
                 android:textSize="12sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_best_cars_title" />
@@ -271,11 +276,11 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:background="@drawable/bg_favorite"
-                        android:padding="4dp"
-                        android:src="@android:drawable/btn_star"
+                        android:padding="6dp"
+                        android:src="@drawable/ic_heart_line"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:tint="@color/hint_gray" />
+                        app:tint="@color/secondary_gray" />
 
                     <ImageView
                         android:id="@+id/iv_car1"
@@ -314,7 +319,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="📍 Washington DC"
-                        android:textColor="@color/hint_gray"
+                        android:textColor="@color/secondary_gray"
+                        android:textStyle="bold"
                         android:textSize="10sp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/tv_car_name1" />
@@ -325,21 +331,38 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:text="4 Seats"
-                        android:textColor="@color/hint_gray"
+                        android:textColor="@color/secondary_gray"
+                        android:textStyle="bold"
                         android:textSize="10sp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/tv_loc1" />
 
                     <TextView
+                        android:id="@+id/tv_price1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
+                        android:layout_marginTop="12dp"
                         android:text="$200/Day"
                         android:textColor="@color/black"
                         android:textStyle="bold"
                         android:textSize="12sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_seats1" />
+
+                    <Button
+                        android:id="@+id/btn_book1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:background="@drawable/bg_button_dark"
+                        android:paddingHorizontal="8dp"
+                        android:text="Book now"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        app:backgroundTint="@null"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/tv_loc1" />
+                        app:layout_constraintTop_toTopOf="@+id/tv_price1" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <!-- Car 2 -->
@@ -360,7 +383,7 @@
                         android:src="@android:drawable/btn_star"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:tint="@color/hint_gray" />
+                        app:tint="@color/secondary_gray" />
 
                     <ImageView
                         android:id="@+id/iv_car2"
@@ -399,7 +422,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="📍 Chicago, USA"
-                        android:textColor="@color/hint_gray"
+                        android:textColor="@color/secondary_gray"
+                        android:textStyle="bold"
                         android:textSize="10sp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/tv_car_name2" />
@@ -410,21 +434,38 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:text="5 Seats"
-                        android:textColor="@color/hint_gray"
+                        android:textColor="@color/secondary_gray"
+                        android:textStyle="bold"
                         android:textSize="10sp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/tv_loc2" />
 
                     <TextView
+                        android:id="@+id/tv_price2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
+                        android:layout_marginTop="12dp"
                         android:text="$100/Day"
                         android:textColor="@color/black"
                         android:textStyle="bold"
                         android:textSize="12sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_seats2" />
+
+                    <Button
+                        android:id="@+id/btn_book2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:background="@drawable/bg_button_dark"
+                        android:paddingHorizontal="8dp"
+                        android:text="Book now"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        app:backgroundTint="@null"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/tv_loc2" />
+                        app:layout_constraintTop_toTopOf="@+id/tv_price2" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </LinearLayout>
 
@@ -446,7 +487,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="View All"
-                android:textColor="@color/hint_gray"
+                android:textColor="@color/secondary_gray"
+                android:textStyle="bold"
                 android:textSize="14sp"
                 app:layout_constraintBottom_toBottomOf="@+id/tv_nearby_title"
                 app:layout_constraintEnd_toEndOf="parent" />
@@ -488,41 +530,41 @@
             <ImageView
                 android:id="@+id/nav_home"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="24dp"
                 android:layout_weight="1"
-                android:src="@android:drawable/ic_menu_today"
+                android:src="@drawable/ic_home_line"
                 app:tint="@color/white" />
 
             <ImageView
                 android:id="@+id/nav_search"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="24dp"
                 android:layout_weight="1"
-                android:src="@android:drawable/ic_menu_search"
+                android:src="@drawable/ic_search_line"
                 app:tint="@color/hint_gray" />
 
             <ImageView
                 android:id="@+id/nav_messages"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="24dp"
                 android:layout_weight="1"
-                android:src="@android:drawable/ic_dialog_email"
+                android:src="@drawable/ic_chat_line"
                 app:tint="@color/hint_gray" />
 
             <ImageView
                 android:id="@+id/nav_notif"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="24dp"
                 android:layout_weight="1"
-                android:src="@android:drawable/ic_popup_reminder"
+                android:src="@drawable/ic_bell_line"
                 app:tint="@color/hint_gray" />
 
             <ImageView
                 android:id="@+id/nav_profile"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="24dp"
                 android:layout_weight="1"
-                android:src="@android:drawable/ic_menu_myplaces"
+                android:src="@drawable/ic_user_line"
                 app:tint="@color/hint_gray" />
 
         </LinearLayout>

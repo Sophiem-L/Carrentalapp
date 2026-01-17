@@ -10,6 +10,7 @@
     <color name="dark_gray">#1E2325</color>
     <color name="light_gray">#F5F7F9</color>
     <color name="hint_gray">#A0A5A9</color>
+    <color name="secondary_gray">#666B6F</color>
     <color name="border_gray">#E0E4E7</color>
     <color name="nav_bg">#1E2325</color>
     <color name="rating_orange">#FF9800</color>
