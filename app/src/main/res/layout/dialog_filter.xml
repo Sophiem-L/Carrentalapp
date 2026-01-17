@@ -23,7 +23,8 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:background="?attr/selectableItemBackgroundBorderless"
-        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        android:src="@drawable/ic_close_line"
+        android:padding="12dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view_handle"
         app:tint="@color/black" />
@@ -142,7 +143,7 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="Regular Cars"
-                    android:textColor="@color/black" />
+                    android:textColor="@color/secondary_gray" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -150,7 +151,7 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="Luxury Cars"
-                    android:textColor="@color/black" />
+                    android:textColor="@color/secondary_gray" />
             </LinearLayout>
 
             <View
@@ -259,7 +260,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Minimum"
-                        android:textColor="@color/hint_gray"
+                        android:textColor="@color/secondary_gray"
                         android:textSize="12sp"
                         android:gravity="center"
                         android:layout_gravity="center_horizontal" />
@@ -284,7 +285,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Maximum"
-                        android:textColor="@color/hint_gray"
+                        android:textColor="@color/secondary_gray"
                         android:textSize="12sp"
                         android:gravity="center"
                         android:layout_gravity="center_horizontal" />
@@ -328,7 +329,7 @@
                     android:background="@drawable/bg_chip_unselected"
                     android:gravity="center"
                     android:text="Hour"
-                    android:textColor="@color/hint_gray" />
+                    android:textColor="@color/secondary_gray" />
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="48dp"
@@ -337,7 +338,7 @@
                     android:background="@drawable/bg_chip_unselected"
                     android:gravity="center"
                     android:text="Day"
-                    android:textColor="@color/hint_gray" />
+                    android:textColor="@color/secondary_gray" />
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="48dp"
@@ -346,7 +347,7 @@
                     android:background="@drawable/bg_chip_unselected"
                     android:gravity="center"
                     android:text="Weekly"
-                    android:textColor="@color/hint_gray" />
+                    android:textColor="@color/secondary_gray" />
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="48dp"
@@ -354,7 +355,7 @@
                     android:background="@drawable/bg_chip_unselected"
                     android:gravity="center"
                     android:text="Monthly"
-                    android:textColor="@color/hint_gray" />
+                    android:textColor="@color/secondary_gray" />
             </LinearLayout>
 
             <RelativeLayout
@@ -375,7 +376,8 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:text="📅 05,Jun,2024 ⌵"
-                    android:textColor="@color/hint_gray"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
                     android:textSize="14sp" />
             </RelativeLayout>
 
@@ -393,12 +395,13 @@
                 android:layout_height="56dp"
                 android:layout_marginTop="16dp"
                 android:background="@drawable/bg_chip_unselected"
-                android:drawableStart="@android:drawable/ic_menu_mylocation"
+                android:drawableStart="@drawable/ic_map_pin_line"
                 android:drawablePadding="12dp"
                 android:gravity="center_vertical"
                 android:paddingHorizontal="16dp"
                 android:text="Shore Dr, Chicago 0062 Usa"
-                android:textColor="@color/hint_gray"
+                android:textColor="@color/black"
+                android:textStyle="bold"
                 android:textSize="14sp" />
 
             <View
@@ -424,8 +427,9 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:text="See All"
-                    android:textColor="@color/hint_gray"
-                    android:textSize="14sp" />
+                    android:textColor="@color/secondary_gray"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
             </RelativeLayout>
 
             <LinearLayout

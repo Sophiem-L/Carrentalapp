@@ -46,6 +46,8 @@
         <activity android:name=".ui.theme.profile.ProfileActivity" />
         <activity android:name=".ui.theme.home.SearchActivity" />
         <activity android:name=".ui.theme.home.HomeActivity" />
+        <activity android:name=".ui.theme.home.CarDetailActivity" />
+        <activity android:name=".ui.theme.home.BookingDetailsActivity" />
 
     </application>
 
