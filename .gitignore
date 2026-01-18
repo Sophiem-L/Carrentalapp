@@ -13,3 +13,8 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+# Firebase Credentials
+backend/carrentapp-6c94f-firebase-adminsdk-fbsvc-010dee1b59.json
+.env
+backend/.env
